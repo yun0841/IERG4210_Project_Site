@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHaven - Ultra Laptop Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <div class="logo">TechHaven</div>
+            
+            <!-- Req 4d: Shopping list displayed in both pages -->
+            <div class="cart-wrapper">
+                <div class="cart-summary">
+                    Shopping List (Total: $1400) &#9662;
+                </div>
+                <div class="cart-dropdown">
+                    <div class="cart-item">
+                        <span>Laptop Pro</span>
+                        <input type="number" value="1" min="1">
+                        <span>$1200</span>
+                    </div>
+                    <div class="cart-item">
+                        <span>Wireless Mouse</span>
+                        <input type="number" value="2" min="1">
+                        <span>$200</span>
+                    </div>
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Req 6: Navigation Menu (Deeper hierarchy) -->
+    <nav class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Electronics</a></li>
+                <li><a href="index.html">Laptops</a></li>
+                <li>Ultra Laptop Pro</li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Requirement 5: Product Details Layout -->
+        <main class="product-detail-layout">
+            
+            <!-- Requirement 7 (Extension): Image Slider -->
+            <!-- Using CSS Scroll Snap for a JS-free slider experience -->
+            <div class="gallery-container">
+                <div class="gallery-scroller">
+                    <div class="gallery-item" id="img1">
+                        <img src="https://via.placeholder.com/600x400?text=Front+View" alt="Laptop Front">
+                    </div>
+                    <div class="gallery-item" id="img2">
+                        <img src="https://via.placeholder.com/600x400?text=Side+View" alt="Laptop Side">
+                    </div>
+                    <div class="gallery-item" id="img3">
+                        <img src="https://via.placeholder.com/600x400?text=Keyboard+View" alt="Laptop Keyboard">
+                    </div>
+                </div>
+                
+                <!-- Thumbnails/Controls -->
+                <div class="gallery-nav">
+                    <a href="#img1"><img src="https://via.placeholder.com/100?text=1" class="gallery-thumb"></a>
+                    <a href="#img2"><img src="https://via.placeholder.com/100?text=2" class="gallery-thumb"></a>
+                    <a href="#img3"><img src="https://via.placeholder.com/100?text=3" class="gallery-thumb"></a>
+                </div>
+            </div>
+
+            <section class="product-info">
+                <h1>Ultra Laptop Pro 15"</h1>
+                <p class="price">$1,200.00</p>
+                
+                <div class="product-desc">
+                    <p>Experience the power of the new Ultra Laptop Pro. Featuring the latest processor, 
+                    a stunning retina display, and all-day battery life. Perfect for coding, designing, 
+                    and gaming on the go.</p>
+                    <br>
+                    <ul>
+                        <li>Processor: Octa-core 3.5GHz</li>
+                        <li>RAM: 16GB DDR5</li>
+                        <li>Storage: 512GB SSD</li>
+                    </ul>
+                </div>
+
+                <!-- Add to Cart Section -->
+                <div style="margin-top: 30px; border-top: 1px solid #ddd; padding-top: 20px;">
+                    <label>Quantity: <input type="number" value="1" style="padding: 5px; width: 60px;"></label>
+                    <br><br>
+                    <button class="add-btn" style="padding: 15px; font-size: 1.1rem;">Add to Shopping List</button>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        &copy; 2023 TechHaven - Dummy Project Phase 1
+    </footer>
+
+</body>
+</html>

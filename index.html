@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHaven - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Semantic Header -->
+    <header>
+        <div class="container header-inner">
+            <div class="logo">TechHaven</div>
+            
+            <!-- Requirement 4: Hover Shopping List -->
+            <div class="cart-wrapper">
+                <div class="cart-summary">
+                    Shopping List (Total: $1400) &#9662;
+                </div>
+                <!-- Dropdown -->
+                <div class="cart-dropdown">
+                    <div class="cart-item">
+                        <span>Laptop Pro</span>
+                        <!-- Req 4b: Input box for quantity -->
+                        <input type="number" value="1" min="1">
+                        <span>$1200</span>
+                    </div>
+                    <div class="cart-item">
+                        <span>Wireless Mouse</span>
+                        <input type="number" value="2" min="1">
+                        <span>$200</span>
+                    </div>
+                    <!-- Req 4c: Checkout Button -->
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Requirement 6: Hierarchical Navigation (Breadcrumbs) -->
+    <nav class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Electronics</li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container main-layout">
+        <!-- Sidebar Category List -->
+        <aside class="categories">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Laptops</a></li>
+                <li><a href="#">Smartphones</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Cameras</a></li>
+                <li><a href="#">Audio</a></li>
+            </ul>
+        </aside>
+
+        <!-- Requirement 3: Main Product List (Tableless) -->
+        <section class="product-list">
+            
+            <!-- Product 1 -->
+            <article class="product-card">
+                <!-- Req 3b: Clickable thumbnail/name redirects to product page -->
+                <a href="product.html" class="product-link">
+                    <img src="https://via.placeholder.com/300x200?text=Laptop" alt="Laptop Pro">
+                    <div class="card-details">
+                        <h4>Ultra Laptop Pro</h4>
+                        <div class="price">$1,200.00</div>
+                    </div>
+                </a>
+                <div style="padding: 0 15px 15px;">
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="product-card">
+                <a href="product.html" class="product-link">
+                    <img src="https://via.placeholder.com/300x200?text=Phone" alt="Smartphone">
+                    <div class="card-details">
+                        <h4>SmartPhone X</h4>
+                        <div class="price">$800.00</div>
+                    </div>
+                </a>
+                <div style="padding: 0 15px 15px;">
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="product-card">
+                <a href="product.html" class="product-link">
+                    <img src="https://via.placeholder.com/300x200?text=Headphones" alt="Headphones">
+                    <div class="card-details">
+                        <h4>Noise Cancel Headset</h4>
+                        <div class="price">$250.00</div>
+                    </div>
+                </a>
+                <div style="padding: 0 15px 15px;">
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </article>
+
+             <!-- Product 4 -->
+             <article class="product-card">
+                <a href="product.html" class="product-link">
+                    <img src="https://via.placeholder.com/300x200?text=Camera" alt="Camera">
+                    <div class="card-details">
+                        <h4>DSLR Camera Kit</h4>
+                        <div class="price">$950.00</div>
+                    </div>
+                </a>
+                <div style="padding: 0 15px 15px;">
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </article>
+
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2023 TechHaven - Dummy Project Phase 1
+    </footer>
+
+</body>
+</html>
